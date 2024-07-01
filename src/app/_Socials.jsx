@@ -24,8 +24,8 @@ const Styled = styled(Button)`
   display: flex;
   font-size: 1.5rem;
   justify-content: center;
-  width: 500px;
   max-width: 100%;
+  width: 500px;
 `;
 
 const StyledIcon = styled(NextImage)`
@@ -54,7 +54,12 @@ const Social = ({ children, ...props }) => {
 };
 
 export const Socials = () => (
-  <Stack direction="column" alignItems="center" spacing={3}>
+  <Stack
+    direction="column"
+    alignItems="center"
+    spacing={3}
+    sx={{ width: "100%", flex: "1 1 0px" }}
+  >
     <Social href="https://tiktok.com/@pinsnpars">pinsnpars</Social>
     <Social href="https://instagram.com/pinsnpars">pinsnpars</Social>
   </Stack>
