@@ -7,6 +7,7 @@ import { Button, Stack, styled } from "@mui/material";
 // Icons
 import Instagram from "@/assets/instagram.svg";
 import TikTok from "@/assets/tiktok.svg";
+import Shop from "@/assets/shop.svg";
 
 const socials = {
   "instagram.com": {
@@ -17,6 +18,10 @@ const socials = {
     icon: TikTok,
     name: "TikTok",
   },
+  "shop.pins-n-pars.com": {
+    icon: Shop,
+    name: "Shop",
+  }
 };
 
 const Styled = styled(Button)`
@@ -60,6 +65,7 @@ export const Socials = () => (
     spacing={3}
     sx={{ width: "100%", flex: "1 1 0px" }}
   >
+    <Social href="https://shop.pins-n-pars.com">Online Store</Social>
     <Social href="https://tiktok.com/@pinsnpars">pinsnpars</Social>
     <Social href="https://instagram.com/pinsnpars">pinsnpars</Social>
   </Stack>
