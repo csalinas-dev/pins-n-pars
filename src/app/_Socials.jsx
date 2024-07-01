@@ -25,6 +25,7 @@ const Styled = styled(Button)`
   font-size: 1.5rem;
   justify-content: center;
   width: 500px;
+  max-width: 100%;
 `;
 
 const StyledIcon = styled(NextImage)`
@@ -37,7 +38,6 @@ const StyledIcon = styled(NextImage)`
 const Social = ({ children, ...props }) => {
   const { href } = props;
   const url = new URL(href);
-  console.log(url.hostname);
   const { icon, name } = socials[url.hostname];
   return (
     <Styled

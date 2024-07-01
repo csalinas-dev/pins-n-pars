@@ -7,15 +7,12 @@ import {
 } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-let theme = createTheme({
-  palette: {
-    mode: "dark",
-  },
-});
+let theme = createTheme();
 
 theme = createTheme({
   ...theme,
   palette: {
+    mode: "dark",
     primary: {
       ...theme.palette.augmentColor({
         color: { main: "#A90000" },
